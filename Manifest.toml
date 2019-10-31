@@ -157,6 +157,12 @@ git-tree-sha1 = "13240cfcc884837fc1aa89b60d500a652bcc3f10"
 uuid = "324d7699-5711-5eae-9e2f-1d82baa6b597"
 version = "0.5.5"
 
+[[Clustering]]
+deps = ["Distances", "LinearAlgebra", "NearestNeighbors", "Printf", "SparseArrays", "Statistics", "StatsBase"]
+git-tree-sha1 = "f387d5937d0c9d0191c711d7d204bce15bd23b45"
+uuid = "aaaa29a8-35af-508c-8bc3-b662a17a0fe5"
+version = "0.13.3"
+
 [[CodecBzip2]]
 deps = ["BinaryProvider", "Libdl", "TranscodingStreams"]
 git-tree-sha1 = "5db086e510c11b4c87d05067627eadb2dc079995"
@@ -335,6 +341,17 @@ git-tree-sha1 = "e4d8b2947fb7d855ba84d6ce8481c8351563fec9"
 uuid = "497a8b3b-efae-58df-a0af-a86822472b78"
 version = "0.9.13"
 
+[[ElasticArrays]]
+git-tree-sha1 = "d9c079b747b9e9985d83e806bb77e41d149c959a"
+uuid = "fdbdab4c-e67f-52f5-8c3f-e7b388dad3d4"
+version = "0.4.0"
+
+[[ElasticPDMats]]
+deps = ["LinearAlgebra", "MacroTools", "PDMats", "Test"]
+git-tree-sha1 = "c6ac4406d9b4a549f7316fc746f7ccd5f1bcd2cd"
+uuid = "2904ab23-551e-5aed-883f-487f97af5226"
+version = "0.2.1"
+
 [[Electron]]
 deps = ["Base64", "JSON", "Sockets", "URIParser"]
 git-tree-sha1 = "7731daad05c67a98995152990630555ec0c0b4ee"
@@ -370,6 +387,12 @@ deps = ["AbstractFFTs", "BinaryProvider", "Conda", "Libdl", "LinearAlgebra", "Re
 git-tree-sha1 = "6c5b420da0b8c12098048561b8d58f81adea506f"
 uuid = "7a1cc6ca-52ef-59f5-83cd-3a7055c09341"
 version = "1.0.1"
+
+[[FastGaussQuadrature]]
+deps = ["LinearAlgebra", "SpecialFunctions"]
+git-tree-sha1 = "af35c193d743c674a25c384a9b673299a179cc2b"
+uuid = "442a2c76-b920-505d-bb47-c5924d526838"
+version = "0.4.0"
 
 [[Feather]]
 deps = ["Arrow", "CategoricalArrays", "DataFrames", "Dates", "FlatBuffers", "Mmap", "Tables"]
@@ -472,6 +495,18 @@ deps = ["Base64", "CategoricalArrays", "Colors", "Compat", "Compose", "Contour",
 git-tree-sha1 = "e34e88f3a3fee1b1fe7aaea3291627b7d9a4bf5d"
 uuid = "c91e804a-d5a3-530f-b6f0-dfbca275c004"
 version = "1.1.0"
+
+[[GaussianMixtures]]
+deps = ["Clustering", "Compat", "DelimitedFiles", "Distributed", "Distributions", "FileIO", "JLD", "LinearAlgebra", "Logging", "PDMats", "Printf", "Random", "ScikitLearnBase", "SpecialFunctions", "Statistics", "StatsBase"]
+git-tree-sha1 = "9b892cfc95da04ca9eff2387bc66f6baddeed606"
+uuid = "cc18c42c-b769-54ff-9e2a-b28141a64aae"
+version = "0.3.0"
+
+[[GaussianProcesses]]
+deps = ["Distances", "Distributions", "ElasticArrays", "ElasticPDMats", "FastGaussQuadrature", "ForwardDiff", "LinearAlgebra", "Optim", "PDMats", "Printf", "Random", "RecipesBase", "ScikitLearnBase", "SpecialFunctions", "StaticArrays", "Statistics", "StatsFuns", "Test"]
+git-tree-sha1 = "d27b78ff418d683df83ea7ae74f4eb545a8504ae"
+uuid = "891a1506-143c-57d2-908e-e1f8e92e6de9"
+version = "0.9.0"
 
 [[GenericSVD]]
 deps = ["LinearAlgebra"]
@@ -655,6 +690,12 @@ git-tree-sha1 = "3680605a77f20bec59eea00389eb7aafe973abbb"
 uuid = "929cbde3-209d-540e-8aea-75f648917ca0"
 version = "1.3.1"
 
+[[LaTeXStrings]]
+deps = ["Compat"]
+git-tree-sha1 = "7ab9b8788cfab2bdde22adf9004bda7ad9954b6c"
+uuid = "b964fa9f-0449-5b57-a5c2-d3ea65f4040f"
+version = "1.0.3"
+
 [[LazyArrays]]
 deps = ["FillArrays", "LinearAlgebra", "MacroTools", "StaticArrays"]
 git-tree-sha1 = "01ec151cd0418fb05294b0230471765e0a65adb1"
@@ -750,10 +791,10 @@ deps = ["Base64"]
 uuid = "d6f4376e-aef5-505a-96c1-9c027394607a"
 
 [[MbedTLS]]
-deps = ["BinaryProvider", "Dates", "Libdl", "Random", "Sockets"]
-git-tree-sha1 = "85f5947b53c8cfd53ccfa3f4abae31faa22c2181"
+deps = ["BinaryProvider", "Dates", "Distributed", "Libdl", "Random", "Sockets", "Test"]
+git-tree-sha1 = "2d94286a9c2f52c63a16146bb86fd6cdfbf677c6"
 uuid = "739be429-bea8-5141-9913-cc70e7f3736d"
-version = "0.7.0"
+version = "0.6.8"
 
 [[Measures]]
 deps = ["Test"]
@@ -782,6 +823,17 @@ version = "0.4.3"
 [[Mmap]]
 uuid = "a63ad114-7e13-5084-954f-fe012c677804"
 
+[[Mocking]]
+git-tree-sha1 = "bd2623f8b728af988d2afec53d611acb621f3bc4"
+uuid = "78c3b35d-d492-501b-9361-3d52fe80e533"
+version = "0.7.0"
+
+[[NBInclude]]
+deps = ["Compat", "JSON", "SoftGlobalScope"]
+git-tree-sha1 = "9881dd75c83eba704798dfd7185770c29ac720f8"
+uuid = "0db19996-df87-5ea3-a455-e3a50d440464"
+version = "2.1.0"
+
 [[NLSolversBase]]
 deps = ["Calculus", "DiffEqDiffTools", "DiffResults", "Distributed", "ForwardDiff"]
 git-tree-sha1 = "f1b8ed89fa332f410cfc7c937682eb4d0b361521"
@@ -799,6 +851,12 @@ deps = ["Compat"]
 git-tree-sha1 = "ce3b85e484a5d4c71dd5316215069311135fa9f2"
 uuid = "77ba4419-2d1f-58cd-9bb1-8ffee604a2e3"
 version = "0.3.2"
+
+[[NearestNeighbors]]
+deps = ["Distances", "LinearAlgebra", "Mmap", "StaticArrays", "Test"]
+git-tree-sha1 = "f47c5d97cf9a8caefa47e9fa9d99d8fda1a65154"
+uuid = "b8a86587-4115-5ab1-83bc-aa920d37bbce"
+version = "0.4.3"
 
 [[NodeJS]]
 deps = ["Test"]
@@ -948,6 +1006,12 @@ git-tree-sha1 = "6e5bac1b1faf3575731a6a5b76f638f2389561d3"
 uuid = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
 version = "1.91.2"
 
+[[PyPlot]]
+deps = ["Colors", "LaTeXStrings", "PyCall", "Sockets", "Test", "VersionParsing"]
+git-tree-sha1 = "ccecc72cf5b41a5de686bd76999040050a8a3472"
+uuid = "d330b81b-6aea-500a-939a-2ce795aea3ee"
+version = "2.8.2"
+
 [[QuadGK]]
 deps = ["DataStructures", "LinearAlgebra"]
 git-tree-sha1 = "438630b843c210b375b2a246329200c113acc61b"
@@ -977,6 +1041,18 @@ deps = ["CategoricalArrays", "Conda", "DataFrames", "DataStructures", "Dates", "
 git-tree-sha1 = "21f8375424fa7050595080bf53b4b4f854449eb9"
 uuid = "6f49c342-dc21-5d91-9882-a32aef131414"
 version = "0.13.4"
+
+[[RData]]
+deps = ["CategoricalArrays", "CodecZlib", "DataFrames", "Dates", "FileIO", "Requires", "TimeZones"]
+git-tree-sha1 = "cb2b11bbbb18a4317a1db0ef121626945c1db51e"
+uuid = "df47a6cb-8c03-5eed-afd8-b6050d6c41da"
+version = "0.6.3"
+
+[[RDatasets]]
+deps = ["CSV", "CodecZlib", "DataFrames", "FileIO", "Printf", "RData", "Reexport", "Test"]
+git-tree-sha1 = "4d93a52b94397bf0a9477d04e7a151a688672695"
+uuid = "ce6b1742-4840-55fa-b093-852dadbb1d8b"
+version = "0.6.1"
 
 [[REPL]]
 deps = ["InteractiveUtils", "Markdown", "Sockets"]
@@ -1023,6 +1099,12 @@ version = "0.5.0"
 
 [[SHA]]
 uuid = "ea8e919c-243c-51af-8825-aaa63cd721ce"
+
+[[ScikitLearn]]
+deps = ["Compat", "Conda", "DataFrames", "DecisionTree", "Distributed", "GaussianMixtures", "GaussianProcesses", "IterTools", "LinearAlgebra", "MacroTools", "NBInclude", "Parameters", "Printf", "PyCall", "PyPlot", "RData", "RDatasets", "Random", "ScikitLearnBase", "SparseArrays", "StatsBase"]
+git-tree-sha1 = "4990323c72c63ac1d6e43730454399ada3d8a194"
+uuid = "3646fa90-6ef7-5e7e-9f22-8aca16db6324"
+version = "0.5.1"
 
 [[ScikitLearnBase]]
 deps = ["LinearAlgebra", "Random", "Statistics"]
@@ -1126,7 +1208,7 @@ uuid = "09ab397b-f2b6-538f-b94a-2f83cf4a842a"
 version = "0.4.0"
 
 [[SuiteSparse]]
-deps = ["Libdl", "LinearAlgebra", "Serialization", "SparseArrays"]
+deps = ["Libdl", "LinearAlgebra", "SparseArrays"]
 uuid = "4607b0f0-06f3-5cda-b6b1-a6196a1729e9"
 
 [[SweepOperator]]
@@ -1198,6 +1280,12 @@ deps = ["BinaryProvider", "Distributed", "Libdl", "Logging", "Sockets", "Test"]
 git-tree-sha1 = "d12121e266b1deb7149ec6ef91aeda521e271446"
 uuid = "8d9c9c80-f77e-5080-9541-c6f69d204e22"
 version = "0.6.0"
+
+[[TimeZones]]
+deps = ["Dates", "EzXML", "Mocking", "Printf", "Serialization", "Unicode"]
+git-tree-sha1 = "4d2d681e1dd715fdaa47d31a7208cead357bb357"
+uuid = "f269a46b-ccf7-5d73-abea-4c690281aa53"
+version = "0.10.2"
 
 [[TimerOutputs]]
 deps = ["Crayons", "Printf", "Test", "Unicode"]
