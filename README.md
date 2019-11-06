@@ -1,7 +1,7 @@
 # JuliaWorkshop2019
 
 
-Follow this link for the <a href="https://mybinder.org/v2/gh/ppalmes/JuliaWorkshop2019/master" target="_blank">Live Notebook Demos</a>.
+Follow this link for the [Live Notebook Demos](https://mybinder.org/v2/gh/ppalmes/JuliaWorkshop2019/master" target="_blank).
 
 This github repo is a collection of Notebook demos to learn Julia. 
 - `Part 1` contains tutorials from juliabox.org  
