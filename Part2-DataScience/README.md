@@ -2,4 +2,4 @@
 
 Collections of Notebooks for data analysis combining libraries from Julia, R, and Python.
 
-Contributor: Paulito Palmes
+Main Contributor: Paulito Palmes
