@@ -1,11 +1,12 @@
-# JuliaWorkshop2019
+# Julia in Data Modeling and Visualization
 
+Collections of Notebooks for data analysis combining libraries from Julia, R, and Python.
 
-Follow this link for the [Live Notebook Demos](https://mybinder.org/v2/gh/ppalmes/JuliaWorkshop2019/master).
+Main Contributor: Paulito Palmes
 
-This github repo is a collection of Notebook demos to learn Julia. 
-- [Part 1](Part1-BasicJulia). `Basic Julia` contains tutorials from juliabox.org  
-- [Part 2](Part2-AdvancedJulia). `Advanced Julia` focuses on the main Julia features for fast computation.
-- [Part 3](Part3-DataScience). `Data Science` in Julia is based on my previous meetup talks on Machine Learning and Data Modeling.
+## Topics
 
-Please feel free to raise issues or pull request.
+- [Julia Interfacing with R and Python](Julia_Interfacing_with_Python_ScikitLearn_and_R_Caret.ipynb)
+- [Julia+R+Py in Data Modeling and Visualization](Julia_in_Data_Modeling_Visualization.ipynb)
+- [Neural Network Learning in Julia](Deep_Learning_in_Julia.ipynb)
+- [Parallel Computing in Julia](Distributed_and_Parallel_Programming.ipynb)
