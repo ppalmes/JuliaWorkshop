@@ -1,0 +1,8 @@
+r-base 
+r-base-dev
+r-cran-ggplot2
+r-cran-randomforest
+r-cran-caret
+r-cran-e1071
+python3-sklearn
+python3
