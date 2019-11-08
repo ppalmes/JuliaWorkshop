@@ -3,5 +3,5 @@ Basic Julia:
  - based on [juliabox.org tutorials](https://juliabox.com/)
 
 Advanced Julia:
- - Contributor: Carsten Bauer
+ - Contributor: [Carsten Bauer](https://github.com/crstnbr)
  - Based on [JuliaWorkshop19](https://github.com/crstnbr/JuliaWorkshop19).
