@@ -1,4 +1,4 @@
-# JuliaWorkshop2019
+# JuliaWorkshop
 
 Live Notebook Demos to learn Julia. 
 - [Introductory Julia Live Tutorials](https://mybinder.org/v2/gh/ppalmes/JuliaWorkshop2019/Part1)  
