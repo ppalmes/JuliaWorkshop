@@ -79,7 +79,7 @@ version = "0.2.0"
 
 [[AutoMLPipeline]]
 deps = ["CSV", "Conda", "DataFrames", "Dates", "DecisionTree", "IterTools", "MLBase", "PyCall", "Random", "Statistics", "StatsBase", "Test"]
-git-tree-sha1 = "e3bb0fec2caf0050d7d0ac34fdf889186e5016ea"
+git-tree-sha1 = "96ad350388c226d5364a63352ac4fcc311e804af"
 repo-rev = "master"
 repo-url = "https://github.com/IBM/AutoMLPipeline.jl.git"
 uuid = "08437348-eef5-4817-bc1b-d4e9459680d6"
