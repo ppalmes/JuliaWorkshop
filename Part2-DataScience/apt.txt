@@ -4,5 +4,6 @@ r-cran-ggplot2
 r-cran-randomforest
 r-cran-caret
 r-cran-e1071
+r-cran-rlang
 python3-sklearn
 python3
